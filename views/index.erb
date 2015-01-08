@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temprature via SMS</title>
+</head>
+<body>
+
+  <div class="container center">
+
+    <div class="row">
+      <h3>Send current weather in Melbourne via SMS</h3>
+    </div>
+
+    <div class="row">
+        <label for="phone-number">Your phone number:</label>
+        <input id="phone" type="text" placeholder="+61456789123" id="phone-number">
+
+        <input id='send-sms' class="button-primary" type="submit" value="Send SMS">
+    </div>
+
+    <div id="result" class="row">
+    </div>
+
+
+  </div>
+
+  <div id="loading">
+    <h3>Loading, please wait..</h3>
+  </div>
+</body>
+</html>
